@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>TLOU-challenge</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+                        rel="stylesheet" />
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <link rel="stylesheet" href="./assets/css/style.css">
+                <script src="https://cdn.tailwindcss.com"></script>
+                <script src="./assets/javascript/index.js"></script>
+        
+        </head>
+
+<body>
+        <header
+                class="bg-[#000000] h-[69px] px-[30px]  lg:px-[85px] xl:px[113px]   text-[14px] text-[#FFFFFF] relative z-[20]">
+
+                <div class=" max-w-[1440] mx-[auto]">
+                        <div class="flex justify-between">
+                                <div class="nav-items flex gap-x-[55px]">
+                                        <img src="./assets/images/logo.svg" class="pt-[25px]" />
+
+                                        <ul class="main-menu hidden lg:block lg:flex items-center lg:gap-x-[10px] ">
+                                                <a href="#"
+                                                        class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                        <li class="">
+                                                                HOME</li>
+                                                </a>
+                                                <a href="#"
+                                                        class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                        <li class="">
+                                                                ABOUT US</li>
+                                                </a>
+                                                <a href="#"
+                                                        class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                        <li class="">
+                                                                LADDERS</li>
+                                                </a>
+                                                <a href="#"
+                                                        class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                        <li class="">
+                                                                TOURNAMENTS</li>
+                                                </a>
+                                                <a href="#"
+                                                        class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                        <li class="">
+                                                                HALL OF FAME</li>
+                                                </a>
+                                                <a href="#"
+                                                        class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                        <li class="">
+                                                                SUPPORT & CONTACT</li>
+                                                </a>
+                                        </ul>
+                                </div>
+                                <div class=" pt-[17px] hidden xl:block font-bold">
+                                        <button class="bg-[#555555] rounded-[29px]  px-[22px] py-[9px]  mr-[10px]">
+                                                LOGIN
+                                        </button>
+                                        <button
+                                                class="bg-[#FFB53B] text-[#000000] rounded-[29px]  px-[16px] py-[9px] ">
+                                                SIGNUP
+                                        </button>
+                                </div>
+
+                                <div class="ham-burger pt-[30px] lg:hidden " >
+                                        <img src="./assets/images/hamburger.svg" id="ham-burger"  onclick="showMenuHandler()"/>
+                                        <i class="fa fa-times hidden text-[30px]  " id="cancel" aria-hidden="true" onclick="hideMenuHandler()"></i>
+                                        
+        
+                                </div>
+                        </div>
+                         <!-- mobile menu -->
+                        
+                         <div class="fixed top-[70px] right-[25px] left-0 z-10 w-[100vw] h-[100vh]  bg-[#0A0A0A] hidden" id="menu-bar">
+                                <div  class="flex  border rounded-[5px] border-[#000000]   text-white  ">
+                                        <ul class="text-[20px] w-[100%] py-[20px] ">
+                                                <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">HOME</li></a>
+                                                <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">ABOUT US</li></a>
+                                                <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">LADDERS</li></a>
+                                                <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">TOURNAMENTS</li></a>
+                                                <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">HALL OF FAME</li></a>
+                                                <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">SUPPORT & CONTACT</li></a>
+                                        </ul>
+                                </div>
+
+
+                          </div>
+                </div>
+
+        </header>
+
+        <main class="main-bg min-h-[482px] pb-[40px] md:pb-[50px] bg-[#060606] relative overflow-hidden">
+
+                <section class="relative z-[2] w-full max-w-[1235px] pt-[61px] md:pt-[228px] m-auto px-[20px] xl:px-0">
+                        <div
+                                class="flex flex-col-reverse lg:flex-row gap-y-[14px] md:gap-y-[40px] justify-between gap-x-[31px]">
+                                <div
+                                        class="w-[100%] lg:min-w-[324px] lg:w-[324px] max-h-[610px] px-[18px] md:px-[25px] pt-[16px] md:pt-[26px] pb-[50px] bg-[#171717] rounded-[8px]">
+                                        <div>
+                                                <h1
+                                                        class="text-gradient-yellow-black font-bold text-[15px] text-[#FFAF30] gont-bold capitalize md:uppercase">
+                                                        Challenge
+                                                        Info
+                                                </h1>
+                                        </div>
+
+                                        <div class="flex flex-col mt-[24px] gap-y-[20px] mt-[18px] text-[#FFFFFF]">
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Match Id</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">#19307
+                                                                </h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Best of</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">Best of 3</h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Formal</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">3v3</h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Start Time</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">June 24, 2022,
+                                                                        5:15 a.m.</h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">No-Show-Time</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">June 24, 2022,
+                                                                        5:15 a.m.</h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Game</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">The last of us
+                                                                </h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Region</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">GLOBAL</h6>
+                                                        </div>
+                                                </div>
+
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Game Mode</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">Supply Raid
+                                                                </h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Status</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">Completed
+                                                                </h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Plat Form</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">Playstation
+                                                                </h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-row justify-between">
+                                                        <div>
+                                                                <h3 class="text-[14px]">Winner</h3>
+                                                        </div>
+                                                        <div>
+                                                                <h6 class="text-[#666666] text-[14px]">Winner
+                                                                </h6>
+                                                        </div>
+                                                </div>
+                                                <div class="flex justify-center mt-[10px]">
+                                                        <div
+                                                                class="bg-[#FFB53B] w-[132px] sm:w-[186px] flex justify-center font-bold gap-x-[13px] px-[28px] py-[8px] rounded-[38px] shadow-[0px_2px_8px_rgba(255,181,59,0.5)]">
+                                                                <button class="text-[#171717]">Rules</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div>
+                                        <div class="w-full bg-[#171717] rounded-[8px] pb-[25px] md:pb-[50px]">
+                                                <div
+                                                        class="w-full h-[210px] pb-[10px] md:pb-0 md:h-[285px] bg-[#171717] flex justify-between items-center overflow-hidden px-[19px] md:px-[74px]">
+                                                        <div
+                                                                class="flex flex-col justify-center items-center text-center">
+                                                                <div
+                                                                        class="w-[67px] md:w-[100px] h-[67px] md:h-[100px] flex justify-center items-center relative before:absolute before:w-[100px] md:before:w-[130px] before:h-[100px] md:before:h-[130px] before:left-[-20px] before:top-[-80px] before:bg-[#FFB53B] before:opacity-[.6] md:before:opacity-[.5] before:blur-[50px] md:before:blur-[80px]">
+                                                                        <img src="./assets/images/square-card-yellow.svg"
+                                                                                class="absolute" />
+                                                                        <img src="./assets/images/logo/logo-icon.svg"
+                                                                                class="relative z-[2] w-[44px] md:w-[63px] h-[42px] md:h-[60px]" />
+                                                                </div>
+                                                                <h5
+                                                                        class="text-[10px] md:text-[12px] text-[#fbfbfb] mt-[5px] md:mt-0">
+                                                                        Team 1</h5>
+                                                                <h6 class="text-[8px] text-[#FFB53B] mb-[4px] md:mb-0">
+                                                                        Team Since: June
+                                                                        2, 2022
+                                                                </h6>
+                                                                <img src="./assets/images/yellow-stage.svg"
+                                                                        class="mb-[-20px]" />
+                                                        </div>
+                                                        <div class="w-[76px] h-[43px] md:h-[69px] top-[-30px] relative">
+                                                                <img src="./assets/images/V.svg"
+                                                                        class="absolute w-[30px] md:w-[auto] top-0 left-0" />
+                                                                <img src="./assets/images/S.svg"
+                                                                        class="absolute w-[30px] md:w-[auto] bottom-0 right-[-10px] md:right-0" />
+                                                        </div>
+                                                        <div
+                                                                class="flex flex-col justify-center items-center text-center">
+                                                                <div
+                                                                        class="w-[67px] md:w-[100px] h-[67px] md:h-[100px] flex justify-center items-center relative before:absolute before:w-[100px] md:before:w-[130px] before:h-[100px] md:before:h-[130px] before:right-[-20px] before:top-[-80px] before:bg-[#F14233] before:opacity-[.6] md:before:opacity-[.5] before:blur-[50px] md:before:blur-[80px]">
+                                                                        <img src="./assets/images/square-card-red.svg"
+                                                                                class="absolute" />
+                                                                        <img src="./assets/images/logo/logo-icon.svg"
+                                                                                class="relative z-[2] w-[44px] md:w-[63px] h-[42px] md:h-[60px]" />
+                                                                </div>
+                                                                <h5
+                                                                        class="text-[10px] md:text-[12px] text-[#fbfbfb] mt-[5px] md:mt-0">
+                                                                        Team 2</h5>
+                                                                <h6 class="text-[8px] text-[#FB5149] mb-[4px] md:mb-0">
+                                                                        Team Since: June
+                                                                        2, 2022
+                                                                </h6>
+                                                                <img src="./assets/images/red-stage.svg"
+                                                                        class="mb-[-20px]" />
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="md:px-[52px] relative before:absolute before:w-[2px] before:h-[70%] before:bg-[#7575754F] before:left-[25px] before:top-[40px] pt-0 md:pt-[5px] md:pt-0 px-[22px]">
+                                                        <h1
+                                                                class="text-gradient-yellow-black text-[16px] md:text-[20px] text-[#FFAF30] gont-bold font-bold uppercase">
+                                                                Match location</h1>
+                                                        <div class="mt-[13px] flex flex-col gap-y-[22px] pl-[25px]">
+                                                                <div
+                                                                        class="h-[97px] relative before:absolute before:w-[20px] before:h-[20px] before:border-[5px] before:border-[#171717] before:rounded-full before:bg-[#FEB43A] before:top-[15px] before:left-[-31px] before:z-[3]">
+                                                                        <div
+                                                                                class="black-shade relative h-[97px] flex flex-col justify-center z-[2] before:absolute before:w-[100%] before:h-[97px] before:z-[-1]">
+                                                                                <h5
+                                                                                        class="uppercase text-[11px] md:text-[13px] text-[#FFFFFF66] ">
+                                                                                        map: 1</h5>
+                                                                                <h4
+                                                                                        class="uppercase text-[14px] md:text-[16] text-[#fff] pt-[2px] pb-[4px]">
+                                                                                        supply raid - university</h4>
+                                                                                <h6
+                                                                                        class="uppercase text-[10px] text-[#FFB53B] ">
+                                                                                        host: team 1</h6>
+                                                                        </div>
+                                                                        <img src="./assets/images/locations/university.png"
+                                                                                class="h-[100%] absolute right-0 top-0 object-cover">
+                                                                </div>
+                                                                <div
+                                                                        class="h-[97px] relative before:absolute before:w-[20px] before:h-[20px] before:border-[5px] before:border-[#171717] before:rounded-full before:bg-[#AF2E26] before:top-[15px] before:left-[-31px] before:z-[3]">
+                                                                        <div
+                                                                                class="black-shade relative h-[97px] flex flex-col justify-center z-[2] before:absolute before:w-[100%] before:h-[97px] before:z-[-1]">
+                                                                                <h5
+                                                                                        class="uppercase text-[11px] md:text-[13px] text-[#FFFFFF66] ">
+                                                                                        map: 2</h5>
+                                                                                <h4
+                                                                                        class="uppercase text-[14px] md:text-[16] text-[#fff] pt-[2px] pb-[4px]">
+                                                                                        supply raid - checkpoint</h4>
+                                                                                <h6
+                                                                                        class="uppercase text-[10px] text-[#AF2E26] ">
+                                                                                        host: team 2</h6>
+                                                                        </div>
+                                                                        <img src="./assets/images/locations/checkpoint.png"
+                                                                                class="h-[100%] absolute right-0 top-0 object-cover">
+                                                                </div>
+                                                                <div
+                                                                        class="h-[97px] relative before:absolute before:w-[20px] before:h-[20px] before:border-[5px] before:border-[#171717] before:rounded-full before:bg-[#FEB43A] before:top-[15px] before:left-[-31px] before:z-[3]">
+                                                                        <div
+                                                                                class="black-shade relative h-[97px] flex flex-col justify-center z-[2] before:absolute before:w-[100%] before:h-[97px] before:z-[-1]">
+                                                                                <h5
+                                                                                        class="uppercase text-[11px] md:text-[13px] text-[#FFFFFF66] ">
+                                                                                        map: 3</h5>
+                                                                                <h4
+                                                                                        class="uppercase text-[14px] md:text-[16] text-[#fff] pt-[2px] pb-[4px]">
+                                                                                        supply raid - bill's town</h4>
+                                                                                <h6
+                                                                                        class="uppercase text-[10px] text-[#FFB53B] ">
+                                                                                        host: team 1</h6>
+                                                                        </div>
+                                                                        <img src="./assets/images/locations/bills-town.png"
+                                                                                class="h-[100%] absolute right-0 top-0 object-cover">
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="flex flex-col md:flex-row gap-y-[14px] gap-x-[17px] mt-[16px]">
+                                                <div
+                                                        class="w-full min-h-[253px] md:min-h-[356px] bg-[#171717] border-t-[2px] border-[#FFB53B] rounded-[8px] px-[20px] md:px-[25px] pb-[18px] pt-[16px] md:py-[20px]">
+                                                        <h2
+                                                                class="text-gradient-yellow-black text-[15px] text-[#FFAF30] font-bold">
+                                                                Team 1</h2>
+                                                        <ul class="flex flex-col gap-y-[3px] mt-[16px] md:mt-[20px]">
+                                                                <li
+                                                                        class="h-[42px] flex justify-between items-center text-[#fff] text-[13px] bg-[#1e1e1e] rounded-[5px] drop-shadow-[0px_13px_25px_rgba(0,0,0,0.3)] px-[19px]">
+                                                                        <span>Username</span><span
+                                                                                class="text-[#FFFFFF6E] uppercase">psn</span>
+                                                                </li>
+                                                                <li
+                                                                        class="h-[42px] flex justify-between items-center text-[#fff] text-[13px] bg-[#1e1e1e] rounded-[5px] drop-shadow-[0px_13px_25px_rgba(0,0,0,0.3)] px-[19px]">
+                                                                        <span>Player 1</span><span
+                                                                                class="text-[#FFFFFF6E] uppercase">psn</span>
+                                                                </li>
+                                                                <li
+                                                                        class="h-[42px] flex justify-between items-center text-[#fff] text-[13px] bg-[#1e1e1e] rounded-[5px] drop-shadow-[0px_13px_25px_rgba(0,0,0,0.3)] px-[19px]">
+                                                                        <span>Player 2</span><span
+                                                                                class="text-[#FFFFFF6E] uppercase">psn</span>
+                                                                </li>
+                                                                <li
+                                                                        class="h-[42px] flex justify-between items-center text-[#fff] text-[13px] bg-[#1e1e1e] rounded-[5px] drop-shadow-[0px_13px_25px_rgba(0,0,0,0.3)] px-[19px]">
+                                                                        <span>Player 3</span><span
+                                                                                class="text-[#FFFFFF6E] uppercase">psn</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                                <div
+                                                        class="w-full min-h-[253px] md:min-h-[356px] bg-[#171717] border-t-[2px] border-[#AF2E26] rounded-[8px] px-[20px] md:px-[25px] pb-[18px] pt-[16px] md:py-[20px]">
+                                                        <h2
+                                                                class="text-gradient-red-black text-[15px] text-[#FFAF30] font-bold">
+                                                                Team 2</h2>
+                                                        <ul class="flex flex-col gap-y-[3px] mt-[16px] md:mt-[20px]">
+                                                                <li
+                                                                        class="h-[42px] flex justify-between items-center text-[#fff] text-[13px] bg-[#1e1e1e] rounded-[5px] drop-shadow-[0px_13px_25px_rgba(0,0,0,0.3)] px-[19px]">
+                                                                        <span>Username</span><span
+                                                                                class="text-[#FFFFFF6E] uppercase">psn</span>
+                                                                </li>
+                                                                <li
+                                                                        class="h-[42px] flex justify-between items-center text-[#fff] text-[13px] bg-[#1e1e1e] rounded-[5px] drop-shadow-[0px_13px_25px_rgba(0,0,0,0.3)] px-[19px]">
+                                                                        <span>Player 1</span><span
+                                                                                class="text-[#FFFFFF6E] uppercase">psn</span>
+                                                                </li>
+                                                                <li
+                                                                        class="h-[42px] flex justify-between items-center text-[#fff] text-[13px] bg-[#1e1e1e] rounded-[5px] drop-shadow-[0px_13px_25px_rgba(0,0,0,0.3)] px-[19px]">
+                                                                        <span>Player 2</span><span
+                                                                                class="text-[#FFFFFF6E] uppercase">psn</span>
+                                                                </li>
+                                                                <li
+                                                                        class="h-[42px] flex justify-between items-center text-[#fff] text-[13px] bg-[#1e1e1e] rounded-[5px] drop-shadow-[0px_13px_25px_rgba(0,0,0,0.3)] px-[19px]">
+                                                                        <span>Player 3</span><span
+                                                                                class="text-[#FFFFFF6E] uppercase">psn</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                </section>
+        </main>
+
+        <footer class=" bg-[#161616] ">
+                <div class="  h-[17px] border-b-[1px] border-[#FFB53B] "></div>
+                <div class=" max-w-[1440px] xl:h-[407px] lg:h-[300px]">
+            
+                     
+            
+            
+                        <div class="flex flex-col pt-[46px] pb-[10px]  sm:py-[46px] pl-[22px] sm:pl-[80px]    lg:flex-row lg:px-[107px]  justify-center  lg:justify-between">
+                                <div class="img"><img src="./assets/images/footer-img.svg" class="w-[150px]" />
+                                        <div class="mt-[27px] lg:mt-[30px] xl:mt-[115px] text-[12px] text-[#A6A6A6]">FOLLOW US</div>
+                                        <div class="flex gap-x-[8px] lg:gap-x-[12px] mt-[4px] sm:mt-[13px]">
+                                               <div class="h-[34px] w-[34px] flex justify-center items-center xl:w-[50px] xl:h-[50px]  bg-[#292929] rounded-full"> <img src="./assets/images/socials/img-1.svg" alt="" class="w-[15px] h-[15px] xl:w-[25px] xl:h-[25px]"></div>
+                                               <div class="h-[34px] w-[34px] flex justify-center items-center xl:w-[50px] xl:h-[50px]  bg-[#292929] rounded-full"> <img src="./assets/images/socials/img-2.svg" alt="" class="w-[15px] h-[15px] xl:w-[25px] xl:h-[25px]"></div>
+                                               <div class="h-[34px] w-[34px] flex justify-center items-center xl:w-[50px] xl:h-[50px]  bg-[#292929] rounded-full"> <img src="./assets/images/socials/img-3.svg" alt="" class="w-[15px] h-[15px] xl:w-[25px] xl:h-[25px]"></div>
+                                               <div class="h-[34px] w-[34px] flex justify-center items-center xl:w-[50px] xl:h-[50px]  bg-[#292929] rounded-full"> <img src="./assets/images/socials/img-4.svg" alt="" class="w-[15px] h-[15px] xl:w-[25px] xl:h-[25px]"></div>
+                                        </div>
+                                </div>
+                                <div class="flex  gap-x-[40px] sm:gap-x-[110px] md:gap-x-[250px] lg:gap-x-[40px] mt-[25px]">
+                                        
+                                <div class="flex flex-col text-[#FFFFFF]">
+                                        <div ></div>
+                                        <div><h2 class="font-bold text-[14px] sm:text-[16px]">INFORMATION</h2></div>
+                                        <div class="w-[50px] h-[2px] bg-[#FFB53B] mt-[10px] lg:mt-[6px]"></div>
+                                        <div class=" text-[10px] text-[#E2E2E2] xl:text-[13px] mt-[19px] ">
+                                                <ul class="flex flex-col gap-y-[16px] lg:gap-y-[7px]">
+                                                        <div class="flex gap-x-[6.5px] ">
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>About Us</li> </a>
+                                                </div>
+                                                <div class="flex gap-x-[6.5px]"> 
+            
+                                                      <img src="./assets/images/chevron.svg" alt="">
+                                                      <a href="">  <li>Ladders</li> </a>
+                                                </div>
+                                                <div class="flex gap-x-[6.5px]"> 
+            
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>Hall Of Fame</li> </a>
+                                                  </div>
+                                                  <div class="flex gap-x-[6.5px]"> 
+            
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>Contact Us</li> </a>
+                                                  </div>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="flex flex-col text-[#E2E2E2]">
+                                        <div><h2 class="font-bold text-[14px] sm:text-[16px]">TERMS & CONDITIONS</h2></div>
+                                        <div class="w-[50px] h-[2px] bg-[#FFB53B] mt-[10px] lg:mt-[6px]"></div>
+                                        <div class=" text-[11px] lg:text-[13px] mt-[19px] ">
+                                                <ul class="flex flex-col gap-y-[16px] lg:gap-y-[7px]">
+                                                        <div class="flex gap-x-[6.5px] ">
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>Privacy Policy</li> </a>
+                                                </div>
+                                                <div class="flex gap-x-[6.5px]"> 
+            
+                                                      <img src="./assets/images/chevron.svg" alt="">
+                                                      <a href="">  <li>Terms Of Service</li> </a>
+                                                </div>
+                                                <div class="flex gap-x-[6.5px]"> 
+            
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>Do Not Sell My Personal Information</li> </a>
+                                                  </div>
+                                               
+                                                </ul>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="overflow-x-hidden xl:overflow-visible">
+                                        <img src="./assets/images/footer-bg.svg" alt="" srcset="" class="ml-[71%] sm:ml-[80%] lg:ml-[0%] xl:ml-[32%]  w-[154px] h-[147px] lg:w-[175px] xl:w-[332px] xl:h-[318px]">
+                                </div>
+                     
+                        </div>
+            
+                               
+                        </div>
+                        
+                        
+            
+                </div>
+                <div class=" h-[51px] bg-[#FFB53B] w-[100%]">
+                        <p class=" pl-[22px] lg:pl-[151px] pt-[17px] text-[14px] text-[#000000]">Copyright © 2022 TLOUEsports. All rights reserved.</p>
+                </div>
+            
+            
+            </footer> 
+</body>
+
+</html>

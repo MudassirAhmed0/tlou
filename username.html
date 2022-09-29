@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>TLOU-username</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+                        rel="stylesheet" />
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+                <link rel="stylesheet" href="./assets/css/style.css">
+                <script src="https://cdn.tailwindcss.com"></script>
+                <script src="./assets/javascript/index.js"></script>
+
+        
+        </head>
+<body>
+
+        <header
+        class="bg-[#000000] h-[69px] px-[30px]  lg:px-[85px] xl:px[113px]   text-[14px] text-[#FFFFFF] relative z-[20]">
+
+        <div class=" max-w-[1440] mx-[auto]">
+                <div class="flex justify-between">
+                        <div class="nav-items flex gap-x-[55px]">
+                                <img src="./assets/images/logo.svg" class="pt-[25px]" />
+
+                                <ul class="main-menu hidden lg:block lg:flex items-center lg:gap-x-[10px] ">
+                                        <a href="#"
+                                                class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                <li class="">
+                                                        HOME</li>
+                                        </a>
+                                        <a href="#"
+                                                class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                <li class="">
+                                                        ABOUT US</li>
+                                        </a>
+                                        <a href="#"
+                                                class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                <li class="">
+                                                        LADDERS</li>
+                                        </a>
+                                        <a href="#"
+                                                class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                <li class="">
+                                                        TOURNAMENTS</li>
+                                        </a>
+                                        <a href="#"
+                                                class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                <li class="">
+                                                        HALL OF FAME</li>
+                                        </a>
+                                        <a href="#"
+                                                class="flex items-center h-[100%] px-[10px] hover:text-[#FFB53B] border-b-[2px] border-[transparent] hover:border-[#ffb53b]">
+                                                <li class="">
+                                                        SUPPORT & CONTACT</li>
+                                        </a>
+                                </ul>
+                        </div>
+                        <div class=" pt-[17px] hidden xl:block font-bold ">
+                                <button class="bg-[#555555] rounded-[29px]  px-[22px] py-[9px]  mr-[10px]">
+                                        LOGIN
+                                </button>
+                                <button
+                                        class="bg-[#FFB53B] text-[#000000] rounded-[29px]  px-[16px] py-[9px] ">
+                                        SIGNUP
+                                </button>
+                        </div>
+
+                        <div class="ham-burger pt-[30px] lg:hidden " >
+                                <img src="./assets/images/hamburger.svg" id="ham-burger"  onclick="showMenuHandler()"/>
+                                <i class="fa fa-times hidden text-[30px]  " id="cancel" aria-hidden="true" onclick="hideMenuHandler()"></i>
+                                
+
+                        </div>
+                </div>
+                 <!-- mobile menu -->
+                
+                 <div class="fixed top-[70px] right-[25px] left-0 z-10 w-[100vw] h-[100vh]  bg-[#0A0A0A] hidden" id="menu-bar">
+                        <div  class="flex  border rounded-[5px] border-[#000000]   text-white  ">
+                                <ul class="text-[20px] w-[100%] py-[20px] ">
+                                        <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">HOME</li></a>
+                                        <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">ABOUT US</li></a>
+                                        <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">LADDERS</li></a>
+                                        <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">TOURNAMENTS</li></a>
+                                        <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">HALL OF FAME</li></a>
+                                        <a href="#"><li class="p-5 pl-[50px]  py-[20px] hover:bg-[#171717]">SUPPORT & CONTACT</li></a>
+                                </ul>
+                        </div>
+
+
+                  </div>
+        </div>
+
+</header>
+        <main class="main-bg min-h-[482px] pt-[39px] pb-[28px] sm:py-[50px] px-[12px] sm:px-[20px]  bg-[#060606] relative overflow-hidden ">
+
+                <section class=" max-w-[1227px]  mx-auto relative z-[2]">
+                        <!-- table-div -->
+                        <div class="  md:pt-[100px]  lg:pt-[175px] pt-[39px] ">
+                            <!-- table-header -->
+                            <div class="">
+                                <div
+                                    class="min-h-[221px] bg-[#171717] flex flex-col sm:flex-row justify-between pl-[8px] sm:pl-[20px]  lg:px-[47px] pt-[12px] sm:pt-[27px] pb-[16px] lg:pb-[67px] text-[#fff] rounded-tl-[11px] rounded-tr-[11px]">
+                                    <div>
+                                        <div class="relative">
+                                            <div
+                                                class="w-[93px] h-[93px] lg:w-[234px] lg:h-[234px] absolute top-[-50px] sm:top-[-70px] p-[16px] lg:p-[40px] bg-[#171717] rounded-[11px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]">
+                                                <img src="./assets/images/logo/logo-icon.svg"
+                                                    class="drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] " />
+                                            </div>
+                                        </div>
+                                        <div class="pl-[107px] lg:pl-[270px]">
+                                            <h2 class="text-[16px]  sm:text-[24px] lg:text-[36px] font-extrabold">Username</h2>
+                                            <div class="flex justify-center mt-[8px] items-center gap-x-[4px] w-[79px] h-[28px] rounded-[7px] bg-[#262626]">
+                                            <img src="./assets/images/icons/psn.png" class="w-[23px] h-[17px] "/>
+                                            <span class="txt-[14px] text-[#5F5F5F]">PSN</span>
+                                            </div>
+                                            <div class="flex mt-[13px]  gap-x-[11px]">
+                                                <img src="./assets/images/country/uk-flag.svg" alt="uk_img" class="mt-[1px]">
+                                                <h2 class="text-[12px] pt-[5px] md:text-[16px]">United Kingdom</h2>
+                                            </div>
+                                            <div class="flex flex-col gap-y-[10px] text-[11px] lg:text-[16px] mt-[8px] sm:mt-[27px]">
+                                                <div>                                       
+                                                  <h3 class=" text-[#4F4F4F] ">Joined:</h3>
+                                                <p class="text-[#8C8C8C]">June 26,2021, 11:29 p.m.</p>
+                                                 </div>
+                                                 <div>                                       
+                                                        <h3 class=" text-[#4F4F4F]">Last Online:</h3>
+                                                      <p class="text-[#8C8C8C]">June 20,2022, 10:38 p.m.</p>
+                                                       </div>
+      
+
+
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="pr-[15px]">
+                                        <div class="flex flex-col  justify-end relative lg:static ">
+                                        <div class="flex lg:gap-x-[15px] justify-end absolute xl:static right-[-7px] lg:right-[60px] top-[-215px] sm:top-[-45px] lg:-top-[-215px] ml-[250px]">
+                                            <div
+                                                class="flex justify-center items-center flex-col gap-x-[4px] lg:gap-y-[7px] bg-[#171717] rounded-[50px]">
+                                                <div
+                                                    class="w-[29px] h-[29px] sm:w-[40px] sm:h-[40px]  lg:w-[100px] lg:h-[100px] flex justify-center items-center border-[1px] border-[#F3B93C] rounded-[50px] m-[5px] bg-[#282828] ">
+                                                    <img src="./assets/images/cups/gold.png" class="w-[20px] lg:w-[55px]"/>
+                                                </div>
+                                                <span class="text-[10px] md:text-[20px]">0</span>
+                                            </div>
+                                            <div
+                                                class="flex justify-center items-center flex-col gap-x-[4px] lg:gap-y-[7px] bg-[#171717] rounded-[50px]">
+                                                <div
+                                                    class="w-[29px] h-[29px] sm:w-[40px] sm:h-[40px]  lg:w-[100px] lg:h-[100px] flex justify-center items-center border-[1px] border-[#7E7E7E] rounded-[50px] m-[5px] bg-[#282828]">
+                                                    <img src="./assets/images/cups/silver.png" class="w-[20px] lg:w-[55px]" />
+                                                </div>
+                                                <span class="text-[10px] md:text-[20px]">0</span>
+                                            </div>
+                                            <div
+                                                class="flex justify-center items-center flex-col gap-x-[4px]  lg:gap-y-[7px]  rounded-[50px]">
+                                                <div
+                                                    class="w-[29px] h-[29px] lg:w-[100px] sm:w-[40px] sm:h-[40px] lg:w-[100px] lg:h-[100px] flex justify-center items-center border-[1px] border-[#D88A53] rounded-[50px] m-[5px] bg-[#282828]">
+                                                    <img src="./assets/images/cups/bronze.png" class="w-[20px] lg:w-[55px]" />
+                                                </div>
+                                                <span class="text-[10px] md:text-[20px]">0</span>
+                                            </div>
+                                        </div>
+                                        <div class="md:m-auto xl:ml-[24%]">
+
+                                        <div class="flex gap-x-[10px]  pt-[10px] sm:pt-[70px] lg:pt-[200px] xl:pt-[38px] font-extrabold	">
+                                                <div
+                                                    class="w-[76px] h-[95px] md:w-[85px] md:h-[110px] lg:w-[108px] lg:h-[140px] bg-[#FFFFFF08] gap-y-[4px] py-[5px] lg:py-[11px] px-[5px] lg:px-[10px] text-center flex flex-col rounded-[10px] ">
+                                                    <div class="w-[40px] h-[40px] lg:w-[67px] lg:h-[67px] text-[16px] lg:px-[14px] py-[6px] lg:py-[14px]  m-auto border border-[#393939] rounded-full text-[#FFB53B] ">
+                                                      <span class="mt-[9px] text-[12px] lg:text-[20px]">0%</span>
+                                                    </div>
+                                                    <div>
+                                                    <p class="text-[#4F4F4F] text-[10px] lg:text-[13px] pb-[7px] font-normal">WIN PERCENTAGE</p>
+                                                </div>
+
+                                                   
+                                                </div>
+                                                <div
+                                            class="w-[76px] h-[95px] md:w-[85px] md:h-[110px] lg:w-[108px] lg:h-[140px] bg-[#FFFFFF08] lg:gap-y-[4px] lg:py-[11px] lg:px-[10px] text-center flex flex-col rounded-[10px]">
+                                            <div class="w-[67px] h-[67px] text-[16px] px-[14px] pt-[14px] md:pt-[20px] lg:py-[14px]  m-auto ">
+                                              <span class="lg:text-[32px] mt-[9px] text-[16px] text-[#FFB53B]">0</span>
+                                            </div>
+                                            <div class="w-[41px] m-auto">
+                                            <p class="text-[#4F4F4F] text-[10px] lg:text-[13px] pb-[10px] font-normal ">MATCHES PLAYED</p>
+                                        </div>
+
+                                           
+                                        </div>
+                                            <div
+                                            class="w-[76px] h-[95px] md:w-[85px] md:h-[110px] lg:w-[108px] lg:h-[140px] bg-[#FFFFFF08] lg:gap-y-[4px] lg:py-[11px] lg:px-[10px] text-center flex flex-col rounded-[10px]">
+                                            <div class="w-[67px] h-[67px] text-[16px] px-[14px] pt-[14px] md:pt-[20px] lg:py-[14px]  m-auto ">
+                                              <span class="lg:text-[32px] mt-[9px] text-[16px] text-[#FFB53B]">0</span>
+                                            </div>
+                                            <div class="w-[41px] m-auto">
+                                            <p class="text-[#4F4F4F] text-[10px] lg:text-[13px] pb-[10px] font-normal ">GAMES WON</p>
+                                        </div>
+
+                                           
+                                        </div>
+                                        <div
+                                                    class="w-[76px] h-[95px] md:w-[85px] md:h-[110px] lg:w-[108px] lg:h-[140px] bg-[#FFFFFF08] lg:gap-y-[4px] lg:py-[11px] lg:px-[10px] text-center flex flex-col rounded-[10px]">
+                                                    <div class="w-[67px] h-[67px] text-[16px] px-[14px] pt-[14px] md:pt-[20px] lg:py-[14px]  m-auto ">
+                                                      <span class="lg:text-[32px] mt-[9px] text-[16px] text-[#FFB53B]">0</span>
+                                                    </div>
+                                                    <div class="w-[41px] m-auto">
+                                                    <p class="text-[#4F4F4F] text-[10px] lg:text-[13px] pb-[10px] font-normal	">GAMES LOST</p>
+                                                </div>
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                           
+                            </div>
+                        </section>
+
+                        <section class=" xl:w-[1227px] xl:h-[508px] bg-[#171717] m-auto rounded-[8px]  relative z-[2]  ">
+                                <div class="px-[12px] sm:px-[20px] pb-[26px] mt-[16px] ">
+                                <div class="pt-[14px] sm:pt-[35px] pb-[20px]  sm:pb-[60px] ">
+                                        <h1 class="font-bold text-[#FFFFFF] text-[24px]">Recent Results</h1>
+                                </div>
+                                <div class=" h-[40px] sm:h-[55px]   flex justify-between bg-[#1E1E1E] text-[12px]  sm:text-[18px]  md:text-[24px] lg:text-[30px] font-extrabold text-[#FFFFFF] items-center ">
+                                        <div class="relative w-[170px]  sm:w-[236px] flex justify-center items-center">
+                                         <img src="./assets/images/results/team-1.svg" alt="" class="absolute">
+                                         <span class="text-[10px] sm:text-[15px] z-[1]">Team 1</span>
+
+                                        </div>
+                                        <div class="flex justify-between gap-x-[30px] sm:gap-x-[60px] md:gap-x-[90px] lg:gap-x-[120px] xl:gap-x-[150px] px-[6px]">
+                                        <div><span>0</span></div>
+                                        <div><span>VS</span></div>
+                                        <div><span>0</span></div>
+                                        </div>
+                                        <div class="relative w-[170px]  sm:w-[236px] flex justify-center items-center">
+                                         <img src="./assets/images/results/team-2.svg" alt="" class="absolute">
+                                         <span class="text-[10px] sm:text-[15px] z-[1]">Team 2</span>
+
+                                        </div>
+                                </div>
+
+                                <div class=" flex justify-between bg-[#1E1E1E] text-[12px]  sm:text-[18px]  md:text-[24px] lg:text-[30px] font-extrabold text-[#FFFFFF] items-center h-[40px] sm:h-[55px] mt-[17px] sm:mt-[32px] ">
+                                        <div class="relative w-[170px]  sm:w-[236px] flex justify-center items-center">
+                                                <img src="./assets/images/results/team-1.svg" alt="" class="absolute">
+                                                <span class="text-[10px] sm:text-[15px] z-[1]">Team 1</span>
+       
+                                               </div>
+                                        <div class="flex justify-between gap-x-[30px] sm:gap-x-[60px] md:gap-x-[90px] lg:gap-x-[120px] xl:gap-x-[150px] px-[6px]">
+                                        <div><span>0</span></div>
+                                        <div><span>VS</span></div>
+                                        <div><span>0</span></div>
+                                        </div>
+                                        <div class="relative w-[170px]  sm:w-[236px] flex justify-center items-center">
+                                                <img src="./assets/images/results/team-2.svg" alt="" class="absolute">
+                                                <span class="text-[10px] sm:text-[15px] z-[1]">Team 2</span>
+       
+                                               </div>
+                                </div>
+
+                                <div class="  flex justify-between bg-[#1E1E1E] text-[12px] sm:text-[18px]  md:text-[24px] lg:text-[30px] font-extrabold text-[#FFFFFF] items-center h-[40px] sm:h-[55px] mt-[17px] sm:mt-[32px] ">
+                                        <div class="relative w-[170px]  sm:w-[236px] flex justify-center items-center">
+                                                <img src="./assets/images/results/team-1-img-2.svg" alt="" class="absolute">
+                                                <span class="text-[10px] sm:text-[15px] z-[1]">Team 1</span>
+       
+                                               </div>
+                                        <div class=" flex justify-between gap-x-[30px] sm:gap-x-[60px] md:gap-x-[90px] lg:gap-x-[120px] xl:gap-x-[150px] px-[6px]">
+                                        <div><span class="text-[#FFB53B]">1</span></div>
+                                        <div><span>VS</span></div>
+                                        <div><span>0</span></div>
+                                        </div>
+                                        <div class="relative w-[170px]  sm:w-[236px] flex justify-center items-center">
+                                                <img src="./assets/images/results/team-2.svg" alt="" class="absolute">
+                                                <span class="text-[10px] sm:text-[15px] z-[1]">Team 2</span>
+       
+                                               </div>
+                                </div>
+
+                                <div class=" flex justify-between bg-[#1E1E1E] text-[12px]  sm:text-[18px]  md:text-[24px] lg:text-[30px] font-extrabold text-[#FFFFFF] items-center h-[40px] sm:h-[55px] mt-[17px] sm:mt-[32px] ">
+                                       <div class="relative w-[170px]  sm:w-[236px] flex justify-center items-center">
+                                                <img src="./assets/images/results/team-1-img-2.svg" alt="" class="absolute">
+                                                <span class="text-[10px] sm:text-[15px] z-[1]">Team 1</span>
+       
+                                               </div>
+                                        <div class=" flex justify-between gap-x-[30px] sm:gap-x-[60px] md:gap-x-[90px] lg:gap-x-[120px] xl:gap-x-[150px] px-[6px]">
+                                        <div><span class="text-[#FFB53B]">1</span></div>
+                                        <div><span>VS</span></div>
+                                        <div><span>0</span></div>
+                                        </div>
+                                        <div class="relative w-[170px]  sm:w-[236px] flex justify-center items-center">
+                                                <img src="./assets/images/results/team-2.svg" alt="" class="absolute">
+                                                <span class="text-[10px] sm:text-[15px] z-[1]">Team 2</span>
+       
+                                               </div>
+                                </div>
+                        </div>
+                        </section>
+
+                        <section class="w-[100%] xl:w-[1227px] xl:h-[322px]  bg-[#171717]  m-auto rounded-[8px] relative z-[2]">
+                                <div class="mt-[16px] px-[12px] pb-[16px] sm:pb-[24px] sm:px-[24px]">
+                                <div class="pt-[12px] sm:pt-[35px]  ">
+                                        <h1 class="font-bold text-[#FFFFFF] text-[24px]]">Ladder Teams</h1>
+                                </div>
+                                <div class="mt-[20px] sm:mt-[29px] w-[128px] h-[115px] sm:w-[201px] sm:h-[181px] ">
+                                        <img src="./assets/images/results/ladder-img.svg" alt="">
+                                </div>
+                        </div>
+                        </section>  
+
+            
+                </main>
+
+             
+         <footer class=" bg-[#161616] ">
+                <div class="  h-[17px] border-b-[1px] border-[#FFB53B] "></div>
+                <div class=" max-w-[1440px] xl:h-[407px] lg:h-[300px]">
+
+                     
+
+
+                        <div class="flex flex-col pt-[46px] pb-[10px]  sm:py-[46px] pl-[22px] sm:pl-[80px]    lg:flex-row lg:px-[107px]  justify-center  lg:justify-between">
+                                <div class="img"><img src="./assets/images/footer-img.svg" class="w-[150px]" />
+                                        <div class="mt-[27px] lg:mt-[30px] xl:mt-[115px] text-[12px] text-[#A6A6A6]">FOLLOW US</div>
+                                        <div class="flex gap-x-[8px] lg:gap-x-[12px] mt-[4px] sm:mt-[13px]">
+                                               <div class="h-[34px] w-[34px] flex justify-center items-center xl:w-[50px] xl:h-[50px]  bg-[#292929] rounded-full"> <img src="./assets/images/socials/img-1.svg" alt="" class="w-[15px] h-[15px] xl:w-[25px] xl:h-[25px]"></div>
+                                               <div class="h-[34px] w-[34px] flex justify-center items-center xl:w-[50px] xl:h-[50px]  bg-[#292929] rounded-full"> <img src="./assets/images/socials/img-2.svg" alt="" class="w-[15px] h-[15px] xl:w-[25px] xl:h-[25px]"></div>
+                                               <div class="h-[34px] w-[34px] flex justify-center items-center xl:w-[50px] xl:h-[50px]  bg-[#292929] rounded-full"> <img src="./assets/images/socials/img-3.svg" alt="" class="w-[15px] h-[15px] xl:w-[25px] xl:h-[25px]"></div>
+                                               <div class="h-[34px] w-[34px] flex justify-center items-center xl:w-[50px] xl:h-[50px]  bg-[#292929] rounded-full"> <img src="./assets/images/socials/img-4.svg" alt="" class="w-[15px] h-[15px] xl:w-[25px] xl:h-[25px]"></div>
+                                        </div>
+                                </div>
+                                <div class="flex  gap-x-[40px] sm:gap-x-[110px] md:gap-x-[250px] lg:gap-x-[40px] mt-[25px]">
+                                        
+                                <div class="flex flex-col text-[#FFFFFF]">
+                                        <div ></div>
+                                        <div><h2 class="font-bold text-[14px] sm:text-[16px]">INFORMATION</h2></div>
+                                        <div class="w-[50px] h-[2px] bg-[#FFB53B] mt-[10px] lg:mt-[6px]"></div>
+                                        <div class=" text-[10px] text-[#E2E2E2] xl:text-[13px] mt-[19px] ">
+                                                <ul class="flex flex-col gap-y-[16px] lg:gap-y-[7px]">
+                                                        <div class="flex gap-x-[6.5px] ">
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>About Us</li> </a>
+                                                </div>
+                                                <div class="flex gap-x-[6.5px]"> 
+
+                                                      <img src="./assets/images/chevron.svg" alt="">
+                                                      <a href="">  <li>Ladders</li> </a>
+                                                </div>
+                                                <div class="flex gap-x-[6.5px]"> 
+
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>Hall Of Fame</li> </a>
+                                                  </div>
+                                                  <div class="flex gap-x-[6.5px]"> 
+
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>Contact Us</li> </a>
+                                                  </div>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="flex flex-col text-[#E2E2E2]">
+                                        <div><h2 class="font-bold text-[14px] sm:text-[16px]">TERMS & CONDITIONS</h2></div>
+                                        <div class="w-[50px] h-[2px] bg-[#FFB53B] mt-[10px] lg:mt-[6px]"></div>
+                                        <div class=" text-[11px] lg:text-[13px] mt-[19px] ">
+                                                <ul class="flex flex-col gap-y-[16px] lg:gap-y-[7px]">
+                                                        <div class="flex gap-x-[6.5px] ">
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>Privacy Policy</li> </a>
+                                                </div>
+                                                <div class="flex gap-x-[6.5px]"> 
+
+                                                      <img src="./assets/images/chevron.svg" alt="">
+                                                      <a href="">  <li>Terms Of Service</li> </a>
+                                                </div>
+                                                <div class="flex gap-x-[6.5px]"> 
+
+                                                        <img src="./assets/images/chevron.svg" alt="">
+                                                        <a href="">  <li>Do Not Sell My Personal Information</li> </a>
+                                                  </div>
+                                               
+                                                </ul>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="overflow-x-hidden xl:overflow-visible">
+                                        <img src="./assets/images/footer-bg.svg" alt="" srcset="" class="ml-[71%] sm:ml-[80%] lg:ml-[0%] xl:ml-[32%]  w-[154px] h-[147px] lg:w-[175px] xl:w-[332px] xl:h-[318px]">
+                                </div>
+                     
+                        </div>
+
+                               
+                        </div>
+                        
+                        
+
+                </div>
+                <div class=" h-[51px] bg-[#FFB53B] w-[100%]">
+                        <p class=" pl-[22px] lg:pl-[151px] pt-[17px] text-[14px] text-[#000000]">Copyright © 2022 TLOUEsports. All rights reserved.</p>
+                </div>
+
+
+        </footer>   
+
+        
+</body>
+</html>
